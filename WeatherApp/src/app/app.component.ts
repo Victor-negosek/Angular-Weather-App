@@ -16,7 +16,6 @@ export class AppComponent implements OnInit {
     this.weatherService.getWeatherData('Berlin').subscribe({
       next: (response) => {
         this.weatherData = response;
-        console.log(response.name);
       },
     });
   }
